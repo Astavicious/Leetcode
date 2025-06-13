@@ -2,10 +2,9 @@ class Solution(object):
     def twoSum(self, nums, target):
         d={}
         for i in range(len(nums)):
-            for key,value in d.items():
-                if nums[i]==value:
-                    return [key,i]
-            d[i]= target -nums[i]
+            if nums[i] in d:
+                return [d[nums[i]],i]
+            d[target-nums[i]]=i
 
 
 
