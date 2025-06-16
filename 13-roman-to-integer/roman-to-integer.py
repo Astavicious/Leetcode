@@ -14,8 +14,8 @@ class Solution(object):
                 sum-=d[s[i]]
             else:
                 sum+=d[s[i]]
-        sum+=d[s[-1]]
-        return sum
+        return sum+d[s[-1]]
+        
     
  
         """
